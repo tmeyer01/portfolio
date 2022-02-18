@@ -10,6 +10,10 @@ export default function Welcome() {
         <h1>I'm Thomas Meyer,</h1>
         <h3 className="title"> Full stack web developer</h3>
       </div>
+
+      <a href="#about" className="downArrow">
+          <img src="/images/icons/colorarrow.png" alt="icondown" />
+      </a>
     </div>
   );
 }

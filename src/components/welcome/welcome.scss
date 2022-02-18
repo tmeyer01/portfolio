@@ -15,7 +15,6 @@
     position: relative;
     align-items: center;
 
-
     p{
       font-family: $otherfont;
       font-weight: bold;
@@ -43,7 +42,19 @@
       color:white;
       background-color: gold;
       font-family: $otherfont;
-      
     }
   }
+  a{
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    img{
+      width: 35px;
+      margin: 0 auto 0 auto;
+      animation:  blinker 4s linear infinite;
+    }
+  } 
 }
+      
+
+    
