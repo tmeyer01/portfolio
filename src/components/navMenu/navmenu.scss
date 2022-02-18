@@ -1,0 +1,75 @@
+@import "../../global.scss";
+
+.navMenu{
+  width: 90vh;
+  height: 70px;
+  background-color: transparent;
+  position: fixed;
+  top:0;
+  left:-3000px;
+  z-index:3;
+  font-family: $titlefont;
+  letter-spacing: 3px;
+  font-weight: bold;
+  display: flex;
+  transition: all 1s ease;
+  overflow-y: hidden;
+  align-items:center;
+
+  ul{
+    display: flex;
+    justify-content: space-around;
+
+    li{
+     
+      a{
+        text-decoration: none; 
+        color:white;
+      }
+    }
+  }
+
+
+
+  &.active{
+    left:60px;
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    // flex-direction: column;
+    justify-content: center;
+    justify-content: flex-start;
+    align-items:center;
+    transition: all 1s ease;
+
+   
+    
+    ul{
+      width: 80vw;
+      display: flex;
+      justify-content: space-around;
+      list-style:none;
+      font-weight: 500;
+
+     
+      
+      li{
+       
+        a{
+          text-decoration: none; 
+          color: white;
+        }
+
+        &:hover{
+          font-weight: 600;
+          cursor: pointer;
+        }
+      }
+
+
+    }
+
+    
+  }
+
+}
