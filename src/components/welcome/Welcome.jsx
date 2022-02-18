@@ -3,6 +3,9 @@ import "./welcome.scss";
 export default function Welcome() {
   return (
     <div className="welcome" id="welcome">
+      <div className="container">
+
+
       <div className="name--title--wrapper">
         <p>
           Hello world <span className="blink">.</span>
@@ -14,6 +17,9 @@ export default function Welcome() {
       <a href="#about" className="downArrow">
           <img src="/images/icons/colorarrow.png" alt="icondown" />
       </a>
+
+
+      </div>
     </div>
   );
 }
