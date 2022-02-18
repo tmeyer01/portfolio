@@ -1,3 +1,176 @@
+@import "../../global.scss";
+
 .projects{
-  background-color: purple;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+
+  .arrow {
+    height: 50px;
+    position: absolute;
+    cursor: pointer;
+
+    
+
+
+    &.left{
+      left: 2%;
+    }
+
+    &.right {
+      right: 2%;
+    }
+
+  }
+
+  .down{
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+
+   
+
+    img{
+      width: 35px;
+      animation: blinker 4s linear infinite;
+
+
+      margin: 0 auto 0 auto;
+    }
+
+    @keyframes blinker {  
+      50% { opacity: 0; }
+    }
+  }
+
+  .slider {
+    height: 550px;
+    display: flex;
+    position: absolute;
+    left: 0;
+    transition: all 1s ease-out;
+
+    
+   
+    .container {
+      width: 100vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+
+
+      .item {
+        width: 900px;
+        height: 90%;
+        background-color:white;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        
+        
+     
+        
+        
+        .left {
+          flex: 4;
+          height: 100%;
+          // background-color: yellow;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+       
+
+          .leftContainer{
+            width: 90%;
+            height: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+        
+
+            .imgContainer {
+              width: 50px;
+              height: 50px;
+              // border-radius: 50%;
+              // background-color: rgb(245, 179, 155);
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              overflow-y: hidden;
+
+          
+
+              img{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                cursor: pointer;
+              }
+            }
+
+            h2{
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-size: 20px;
+
+           
+
+            }
+
+            p {
+              font-size: 13px;
+              letter-spacing: 1.2px;
+              font-family: $pfont;
+              line-height: 1.5;
+
+
+             
+            }
+            span {
+              font-size: 12px;
+              font-weight: 600;
+              text-decoration: underline;
+              cursor: pointer;
+            }
+          }
+        }
+
+        .right{
+          flex: 8;
+          height: 100%;
+          // background-color: green;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          overflow: hidden;
+
+     
+          img {
+            width: 90%;
+            // transform: rotate(-10deg);
+          }
+
+          iframe{
+         
+          }
+        }
+      }
+    }
+  
+  }
+
+
+
 }
