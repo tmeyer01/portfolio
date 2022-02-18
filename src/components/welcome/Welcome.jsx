@@ -5,7 +5,7 @@ export default function Welcome() {
    <div className="welcome" id="welcome">
 
     <div className="name--title--wrapper">
-      <p>Hello world.</p>
+      <p>Hello world <span className="blink">.</span></p>
       <h1>I'm Thomas Meyer,</h1>
       <h3 className="title"> Full stack web developer</h3>
 

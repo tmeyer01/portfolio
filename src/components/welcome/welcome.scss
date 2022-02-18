@@ -1,7 +1,9 @@
+@import "../../global.scss";
+
 .welcome{
-  background-color: white;
   display: flex;
   justify-content: center;
+  background-color: white;
   width: 100%;
 
   .name--title--wrapper{
@@ -11,10 +13,37 @@
     flex-direction: column;
     justify-content: center;
     position: relative;
+    align-items: center;
 
 
     p{
-      font-size: large;
+      font-family: $otherfont;
+      font-weight: bold;
+      font-size: larger;
+      
+      .blink{
+        animation: blinker 1s linear infinite;
+      }
+      @keyframes blinker {  
+        50% { opacity: 0; }
+      }
+    }
+
+    h1{
+      font-family: $titlefont;
+      font-size: 80px;
+      margin:20px 0;
+      color:$maincolor;
+      text-shadow: 2px 3px gold;
+    }
+
+    h3{
+      font-size: 35px;
+      margin-left:5px;
+      color:white;
+      background-color: gold;
+      font-family: $otherfont;
+      
     }
   }
 }
