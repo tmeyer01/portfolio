@@ -77,12 +77,28 @@
 
     .image--container{
       display: flex;
+      justify-content: center;
       align-items: center;
-      width: 90%;
+      width: 100%;
 
      
       img{
-        width: 90%;
+        height: 75%;
+        width: 75%;
+        transition: box-shadow .3s;
+        // border: 1px solid rgba(204, 204, 204, 0.174);
+        // border-radius: 25px;
+      }
+
+      img:hover {
+        border-radius: 25px;
+        // box-shadow: 0 0 3px rgba(33,33,33,.2); 
+        -webkit-transform: scale(1.05, 1.05);
+        transform: scale(1.05, 1.05);
+      }
+
+      img:hover::after {
+        opacity: 1;
       }
     }
    
