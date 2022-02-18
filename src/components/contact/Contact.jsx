@@ -101,7 +101,7 @@ export default function Contact() {
               <img src="./images/icons/github.png" alt="github"/>
             </a>
             <a href="https://www.canva.com/design/DAEwBE504Vk/xNEYzY-ZtLBoGtA3jAhUVw/view?utm_content=DAEwBE504Vk&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton" target="_blank" rel="noopener noreferrer">
-              <img src="./images/icons/resume.png" alt="instagram"/>
+              <img src="./images/icons/resume.png" alt="resume"/>
             </a>
           <a href="https://twitter.com/BWebdev" target="_blank" rel="noopener noreferrer">
               <img src="./images/icons/twitter.png" alt="twitter"/>
