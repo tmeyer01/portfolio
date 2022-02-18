@@ -16,7 +16,9 @@ export const projectsData = [
     description: "A full stack web application that allows usesrs to create a todo list. Except this TODO list is auto categorizing. Users can mark tasks important, remove tasks when finished and move tasks to different categories. This project was built with Javascript, HTML, CSS, SASS on the front end and Node, Express, and SQL on the back-end and utilizes Wolfram alpha API and SERP API. This was a group project and I worked on the server-side code as well the front-end functionality.",
     techstack:"Built with Node and Express.",
     link: "https://github.com/tmeyer01/midterm-TODO",
-    video:"https://www.youtube.com/embed/VvufQl1dpRM"
+    video:"https://www.youtube.com/embed/VvufQl1dpRM",
+    liveSite: "https://lighthouse-todo.herokuapp.com/"
+
   },
   {
     id: 3,
