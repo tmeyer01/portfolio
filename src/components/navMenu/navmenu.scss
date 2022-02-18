@@ -36,6 +36,11 @@
         color:white;
       }
     }
+
+    .hiden{
+      color: #000;
+      color: rgba(0, 0, 0, 0);
+    }
   }
 
   &.active{
@@ -67,6 +72,10 @@
           cursor: pointer;
         }
       }
+    }
+    .hiden{
+      color: #000;
+      color: rgba(0, 0, 0, 0);
     }
   }
 }

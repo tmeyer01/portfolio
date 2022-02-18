@@ -29,6 +29,9 @@ export default function NavMenu({ navOpen, toggleNav }) {
               Resume
             </a>
           </li>
+          <li className="hiden">
+            blank
+          </li>
         </ul>
       </div>
     </div>
