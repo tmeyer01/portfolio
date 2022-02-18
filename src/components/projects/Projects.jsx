@@ -28,7 +28,7 @@ export default function Projects() {
                   <h2>{projectsData.title}</h2>
                  
                   <p>{projectsData.description}</p>
-                  {projectsData.liveSite && <p>link</p> } 
+                  
                   <div className="imgContainer">
                     <a
                       href={projectsData.link}
@@ -37,6 +37,20 @@ export default function Projects() {
                     >
                       <img src="./images/icons/github.png" alt="github" />
                     </a>
+
+
+                    {projectsData.liveSite && 
+                    <a
+                    href={projectsData.liveSite}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img src="./images/icons/www.png" alt={projectsData.title} />
+                  </a>
+                    
+                    
+                    
+                    } 
                   </div>
                 </div>
               </div>
