@@ -1,3 +1,113 @@
+@import "../../global.scss";
+
 .aboutMe{
-  background-color: aqua;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+
+  .left{
+    flex: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+    .about--wrapper {
+      display: flex;
+      flex-direction: column;
+      padding: 30px;
+
+
+      h2 {
+        font-family: $titlefont;
+        letter-spacing: 1.2px;
+        padding-bottom: 10px;
+      }
+      
+      p {
+        line-height: 1.6;
+        word-wrap: break-word;
+        font-family: $pfont;
+      }
+    }
+    
+    .downArrowLeft{
+      position: absolute;
+      bottom: 10px;
+      left: 20px;
+      display:flex;
+    }
+
+    img{
+      width: 35px;
+      animation: blinker 4s linear infinite;
+      margin: 0 auto 0 auto;
+    }
+  }
+
+  .right {
+    flex: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .about--languages--libraries{
+      display: flex;
+      flex-direction: column;
+      padding: 30px;
+      height: 100%;
+      justify-content: center;
+
+      .languages{
+        padding-bottom: 30px;
+        p {
+          line-height: 1.6;
+          word-wrap: break-word;
+          font-family: $pfont;
+        }
+      }
+       
+      .libraries{
+        padding-bottom:30px;
+        p {
+          line-height: 1.6;
+          word-wrap: break-word;
+        }
+      }
+
+      .other{
+        p {
+          line-height: 1.6;
+          word-wrap: break-word;
+        }
+      }
+
+      h2{
+        font-family: $titlefont;
+        letter-spacing: 1.2px;
+      }
+
+      p{
+        padding-top:15px;
+        letter-spacing: 1.2px;
+        font-family: $pfont;
+        
+      }
+
+    }
+    .downArrowRight{
+      position: absolute;
+      bottom: 10px;
+      left: 20px;
+      display:none
+    }
+  }
+
+
+    
+
+
+
 }
