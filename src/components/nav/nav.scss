@@ -1,3 +1,5 @@
+@import "../../global.scss";
+
 .nav{
   display: flex;
   width: 100%;
@@ -33,6 +35,34 @@
     }
 
 
+  }
+
+  &.active{
+    background-color: $secondcolor;
+    color:white;
+
+    .hamburger{
+      cursor: pointer;
+
+
+      span{
+        &:first-child{
+          background-color: $maincolor;
+          transform: rotate(20deg);
+          border-radius: 25px;
+          box-shadow: 0;
+        }
+        &:nth-child(2){
+          opacity: 0;
+        }
+        &:last-child{
+          background-color: $maincolor;
+          transform: rotate(-20deg);
+          border-radius: 25px;
+          box-shadow: 0;
+        }
+      }
+    }
   }
 
 }
