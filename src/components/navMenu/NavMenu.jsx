@@ -1,7 +1,5 @@
 import "./navmenu.scss";
 
-import React from "react";
-
 export default function NavMenu({ navOpen, toggleNav }) {
   return (
     <div className={"navMenu " + (navOpen && "active")}>
