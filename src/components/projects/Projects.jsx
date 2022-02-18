@@ -1,18 +1,18 @@
-import './projects.scss'
-import { useState } from 'react';
+import "./projects.scss";
+import { useState } from "react";
 import { projectsData } from "../../projectData";
 
 export default function Projects() {
-  
   const [currentProject, setCurrentProject] = useState(0);
 
   const handleClick = (way) => {
     way === "left"
       ? setCurrentProject(currentProject > 0 ? currentProject - 1 : 2)
-      : setCurrentProject(currentProject < projectsData.length - 1 ? currentProject + 1 : 0);
+      : setCurrentProject(
+          currentProject < projectsData.length - 1 ? currentProject + 1 : 0
+        );
   };
-  
-  
+
   return (
     <div className="projects" id="projects">
       <div
@@ -24,11 +24,10 @@ export default function Projects() {
             <div className="item">
               <div className="left">
                 <div className="leftContainer">
-                
                   <h2>{projectsData.title}</h2>
-                 
+
                   <p>{projectsData.description}</p>
-                  
+
                   <div className="imgContainer">
                     <a
                       href={projectsData.link}
@@ -38,41 +37,35 @@ export default function Projects() {
                       <img src="./images/icons/github.png" alt="github" />
                     </a>
 
-
-                    {projectsData.liveSite && 
-                    <a
-                    href={projectsData.liveSite}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img src="./images/icons/www.png" alt={projectsData.title} />
-                  </a>
-                    
-                    
-                    
-                    } 
+                    {projectsData.liveSite && (
+                      <a
+                        href={projectsData.liveSite}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <img
+                          src="./images/icons/www.png"
+                          alt={projectsData.title}
+                        />
+                      </a>
+                    )}
                   </div>
                 </div>
               </div>
               <div className="right">
-                {/* <img src={data.img} alt={data.title} /> */}
-
                 <iframe
                   width="560"
                   height="315"
                   src={projectsData.video}
                   title="YouTube video player"
-                  // frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                 ></iframe>
-                {/* GIT HUB */}
               </div>
             </div>
           </div>
         ))}
       </div>
-  
 
       <img
         src="./images/icons/left.png"
@@ -91,5 +84,5 @@ export default function Projects() {
         <img src="/images/icons/colorarrow.png" alt="icondown" />
       </a>
     </div>
-  )
+  );
 }
