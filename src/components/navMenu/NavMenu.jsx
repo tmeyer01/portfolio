@@ -5,6 +5,11 @@ import React from 'react'
 export default function NavMenu({ navOpen, toggleNav}) {
   return (
     <div className={"navMenu " + (navOpen && "active")}>
+      <div className="list--container">
+      
+      
+    
+
       <ul>
       <li onClick={toggleNav}>
           <a href="#welcome">Home</a>
@@ -15,6 +20,9 @@ export default function NavMenu({ navOpen, toggleNav}) {
         <li onClick={toggleNav}>
           <a href="#projects">Projects</a>
         </li>
+      </ul>
+
+      <ul>
         <li onClick={toggleNav}>
           <a href="#contact">Contact</a>
         </li>
@@ -22,6 +30,12 @@ export default function NavMenu({ navOpen, toggleNav}) {
           <a href="https://www.canva.com/design/DAEwBE504Vk/xNEYzY-ZtLBoGtA3jAhUVw/view?utm_content=DAEwBE504Vk&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton" target="_blank" rel="noopener noreferrer">Resume</a>
         </li>
       </ul>
+
+
+
+      </div>
+
+
 
 
     </div>
