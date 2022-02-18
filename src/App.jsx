@@ -1,4 +1,5 @@
 import Nav from "./components/nav/Nav"
+import NavMenu from "./components/navMenu/NavMenu";
 import Welcome from "./components/welcome/Welcome";
 import AboutMe from "./components/aboutMe/AboutMe";
 import Projects from "./components/projects/Projects";
@@ -21,7 +22,11 @@ function App() {
 
       <Nav 
         navOpen={navOpen}
-        setNavOpen={setNavOpen}
+        toggleNav={toggleNav}
+      />
+
+      <NavMenu
+        navOpen={navOpen}
         toggleNav={toggleNav}
       />
 
