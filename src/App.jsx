@@ -1,5 +1,8 @@
 import Nav from "./components/nav/Nav"
 import Welcome from "./components/welcome/Welcome";
+import AboutMe from "./components/aboutMe/AboutMe";
+import Projects from "./components/projects/Projects";
+import Contact from "./components/contact/Contact";
 import "./app.scss";
 
 function App() {
@@ -10,6 +13,9 @@ function App() {
 
       <div className="sections">
         <Welcome />
+        <AboutMe />
+        <Projects />
+        <Contact />
       </div>
     </div>
   );
