@@ -2,7 +2,7 @@ import "./welcome.scss"
 
 export default function Welcome() {
   return (
-   <div className="welcome">
+   <div className="welcome" id="welcome">
 
     <div className="name--title--wrapper">
       <p>Hello world.</p>

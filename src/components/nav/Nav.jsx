@@ -1,6 +1,6 @@
 import "./nav.scss"
 
-export default function Nav({ navOpen, setNavOpen, toggleNav}) {
+export default function Nav({ navOpen, toggleNav}) {
   return (
     <div className={"nav " + (navOpen && "active")}>
       <div className="wrapper">
