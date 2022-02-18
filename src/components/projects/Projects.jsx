@@ -72,16 +72,7 @@ export default function Projects() {
           </div>
         ))}
       </div>
-      {/* <img 
-      alt="" 
-      className="arrow left"
-      onClick={()=> handleClick("left")}
-      />
-    <img 
-      alt="" 
-      className="arrow right"
-      onClick={()=> handleClick()}
-    /> */}
+  
 
       <img
         src="./images/icons/left.png"
