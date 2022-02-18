@@ -17,6 +17,7 @@
 
 
     > *{
+      //changed width to 100% from 100vw (might change back later)
       width: 100%;
       height: calc(100vh - 70px);
       scroll-snap-align: start;
