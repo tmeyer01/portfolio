@@ -54,6 +54,24 @@
     align-items:center;
     transition: all 1s ease;
 
+    // @include mobile{
+    //   height: 100px;
+    // }
+
+
+    .list--container{
+      
+
+      @include mobile{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        // justify-content: space-around;
+      }
+
+
+    }
+
     ul{
       // width: 80vw;
       display: flex;
@@ -61,6 +79,14 @@
       list-style:none;
       font-weight: 500;
       width: 50%;
+
+      @include mobile{
+        display: flex;
+        align-items: center;
+        width: 90%;
+        height: 20px;
+        //justify-content: center;
+      }
       
       li{
         a{

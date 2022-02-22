@@ -10,6 +10,10 @@
   top:0;
   z-index: 3;
 
+  // @include mobile{
+  //   height: 100px;
+  // }
+
   .wrapper{
     padding: 10px 30px;
     display: flex;
