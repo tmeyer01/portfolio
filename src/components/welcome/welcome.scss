@@ -6,6 +6,11 @@
   background-color: white;
   width: 100%;
 
+  @include mobile{
+    flex-direction: column;
+    align-items: center;
+  }
+
   .name--title--wrapper{
     width: 100%;
     height: 100%;
@@ -14,6 +19,11 @@
     justify-content: center;
     position: relative;
     align-items: center;
+
+    @include mobile{
+      flex-direction: column;
+      align-items: center;
+    }
 
     p{
       font-family: $otherfont;
@@ -34,6 +44,12 @@
       margin:20px 0;
       color:$maincolor;
       text-shadow: 2px 3px gold;
+
+      @include mobile{
+        font-size: 30px;
+        flex-direction: column;
+        align-items: center;
+      }
     }
 
     h3{
@@ -42,6 +58,12 @@
       color:white;
       background-color: gold;
       font-family: $otherfont;
+
+      @include mobile{
+        font-size: 24px;
+        margin-left:0;
+        justify-content: center;
+      }
     }
   }
   a{
