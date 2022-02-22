@@ -81,7 +81,7 @@ export default function Projects() {
       />
 
       <a href="#contact" className="down">
-        <img src="/images/icons/colorarrow.png" alt="icondown" />
+        <img src="./images/icons/colorarrow.png" alt="icondown" />
       </a>
     </div>
   );

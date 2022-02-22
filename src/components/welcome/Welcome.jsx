@@ -13,7 +13,7 @@ export default function Welcome() {
         </div>
 
         <a href="#about" className="downArrow">
-          <img src="/images/icons/colorarrow.png" alt="icondown" />
+          <img src="./images/icons/colorarrow.png" alt="icondown" />
         </a>
       </div>
     </div>
