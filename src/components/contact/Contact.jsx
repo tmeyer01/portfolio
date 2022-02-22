@@ -94,6 +94,8 @@ export default function Contact() {
 
         <div className="image--container">
 
+            <div className="image--con">
+
             <a href="https://www.linkedin.com/in/tm01/" target="_blank" rel="noopener noreferrer">
               <img src="./images/icons/linkedin.png" alt="linkeDin"/>
             </a>
@@ -109,6 +111,9 @@ export default function Contact() {
           <a href="https://www.instagram.com/_tm.dev/" target="_blank" rel="noopener noreferrer">
               <img src="./images/icons/instagram.png" alt="instagram"/>
             </a>
+
+
+            </div>
 
 
         </div>

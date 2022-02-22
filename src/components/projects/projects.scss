@@ -18,8 +18,8 @@
       height: 35px;
     }
 
-    @include tablet{
-      bottom: 15%;
+    @include desktop{
+      bottom: 13%;
       height: 50px;
     }
 
@@ -191,7 +191,7 @@
           }
    
           iframe{
-            @include mobile2{
+            @include tablet{
               width: 100%;
               border-radius: 15px;
             }

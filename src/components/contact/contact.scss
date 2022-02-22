@@ -4,7 +4,9 @@
   background-color: white;
   display: flex;
 
-
+  @include mobile{
+    flex-direction: column;
+  }
 
 
   .left{
@@ -26,6 +28,16 @@
       align-items: center;
       justify-content: space-around;
 
+      @include mobile{
+        width: 80%;
+        padding:10px;
+      }
+
+      @include desktop{
+        width: 70%;
+        padding:10px;
+      }
+
  
 
       input{
@@ -34,6 +46,14 @@
         font-size: 14px;
         border: 3px solid black;
         border-radius: 5px;
+
+          @include mobile{
+            width: 80%; 
+          }
+          @include desktop{
+            width: 70%;
+            padding:10px;
+          }
 
   
       }
@@ -44,7 +64,13 @@
         font-size: 14px;
         border: 3px solid black;
         border-radius: 5px;
-        
+          @include mobile{
+            width: 80%
+          }
+          @include desktop{
+            width: 70%;
+            padding:10px;
+          }
     
       }
 
@@ -72,8 +98,11 @@
   .right{
     flex: 1;
     display: flex;
+    justify-content: center;
 
-   
+      @include mobile{
+        flex:.5;
+      }   
 
     .image--container{
       display: flex;
@@ -81,18 +110,43 @@
       align-items: center;
       width: 100%;
 
+        @include mobile{
+          width:100%;
+          justify-content: center;
+          height: 80%;
+        }
+      
+      .image--con{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 65%;
+        
+        @include mobile{
+          width:50%;
+          justify-content: center;
+          height: 60%;
+        }
+
+      }
+      a{
+        height: inherit;
+        width:inherit;
+        justify-content: center;
+        overflow: hidden;
+      }  
      
       img{
-        height: 75%;
-        width: 75%;
+        height: 90%;
+        width: 90%;
         transition: box-shadow .3s;
-        // border: 1px solid rgba(204, 204, 204, 0.174);
-        // border-radius: 25px;
+       
+       
+
       }
 
       img:hover {
         border-radius: 25px;
-        // box-shadow: 0 0 3px rgba(33,33,33,.2); 
         -webkit-transform: scale(1.05, 1.05);
         transform: scale(1.05, 1.05);
       }

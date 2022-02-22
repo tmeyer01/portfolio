@@ -16,9 +16,9 @@ $otherfont:  'Karla', sans-serif;
 $pfont:  'Archivo', sans-serif;
 
 
-$phonewidth: 592px;
-
 $width: 768px;
+
+$phonewidth: 592px;
 
 $desktopwidth: 1045px;
 
@@ -30,14 +30,12 @@ $desktopwidth2: 885px;
   }
 };
 
-// Phone 2 
 @mixin tablet{
   @media(max-width: #{$phonewidth}){
     @content
   }
 };
 
-// Tablet
 @mixin desktop{
   @media(max-width: #{$desktopwidth}){
     @content
@@ -45,7 +43,7 @@ $desktopwidth2: 885px;
 };
 
 @mixin desktop2{
-  @media(max-width: #{$desktopwidth}){
+  @media(max-width: #{$desktopwidth2}){
     @content
   }
 }
