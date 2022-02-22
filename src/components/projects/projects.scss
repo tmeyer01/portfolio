@@ -79,6 +79,7 @@
     transition: all 1s ease-out;
 
     @include mobile{
+      padding-top: 20px;
       height: 750px;
     }
 
@@ -224,7 +225,7 @@
             @include mobile{
               flex: 4;
               padding-top: 10px;
-              justify-content: flex-start;
+              //justify-content: flex-start;
             }
             
           img {
