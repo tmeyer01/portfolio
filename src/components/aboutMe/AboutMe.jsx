@@ -50,7 +50,7 @@ export default function AboutMe() {
         </div>
 
         <a href="#projects" className="downArrowRight">
-          <img src="./images/icons/colorarrow.png" alt="icondown" />
+          <img src="./images/icons/colorarrow.png" alt="downICON" />
         </a>
       </div>
     </div>
