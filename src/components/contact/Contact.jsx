@@ -2,14 +2,7 @@ import "./contact.scss";
 import { useState } from "react";
 import { send } from "emailjs-com";
 
-
-
-
 export default function Contact() {
-  
- 
-  
-  
   const [message, setMessage] = useState(false);
 
   const [toSend, setToSend] = useState({
@@ -91,33 +84,45 @@ export default function Contact() {
       </div>
 
       <div className="right">
-
         <div className="image--container">
-
-            <div className="image--con">
-
-            <a href="https://www.linkedin.com/in/tm01/" target="_blank" rel="noopener noreferrer">
-              <img src="./images/icons/linkedin.png" alt="linkeDin"/>
+          <div className="image--con">
+            <a
+              href="https://www.linkedin.com/in/tm01/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="./images/icons/linkedin.png" alt="linkeDin" />
             </a>
-          <a href="https://github.com/tmeyer01" target="_blank" rel="noopener noreferrer">
-              <img src="./images/icons/github.png" alt="github"/>
+            <a
+              href="https://github.com/tmeyer01"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="./images/icons/github.png" alt="github" />
             </a>
-            <a href="https://www.canva.com/design/DAEwBE504Vk/xNEYzY-ZtLBoGtA3jAhUVw/view?utm_content=DAEwBE504Vk&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton" target="_blank" rel="noopener noreferrer">
-              <img src="./images/icons/resume.png" alt="resume"/>
+            <a
+              href="https://www.canva.com/design/DAEwBE504Vk/xNEYzY-ZtLBoGtA3jAhUVw/view?utm_content=DAEwBE504Vk&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="./images/icons/resume.png" alt="resume" />
             </a>
-          <a href="https://twitter.com/BWebdev" target="_blank" rel="noopener noreferrer">
-              <img src="./images/icons/twitter.png" alt="twitter"/>
+            <a
+              href="https://twitter.com/BWebdev"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="./images/icons/twitter.png" alt="twitter" />
             </a>
-          <a href="https://www.instagram.com/_tm.dev/" target="_blank" rel="noopener noreferrer">
-              <img src="./images/icons/instagram.png" alt="instagram"/>
+            <a
+              href="https://www.instagram.com/_tm.dev/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="./images/icons/instagram.png" alt="instagram" />
             </a>
-
-
-            </div>
-
-
+          </div>
         </div>
-       
       </div>
     </div>
   );
