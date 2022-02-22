@@ -57,7 +57,7 @@
     left: 20px;
 
     @include mobile{
-      display:none;
+     // display:none;
     }
 
     img{
@@ -169,7 +169,7 @@
               overflow-y: hidden;
 
               @include mobile{
-                width: 70px;
+                //width: 70px;
                 align-self: center;
               }
 
