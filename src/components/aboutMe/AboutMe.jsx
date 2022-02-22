@@ -7,11 +7,11 @@ export default function AboutMe() {
         <div className="about--wrapper">
           <h2>About me</h2>
           <p>
-            Im a Full-stack web developer from Vancouver BC. Im always looking
+            I'm a full-stack web developer from Vancouver, BC. I'm always looking
             to further enhance my skills while being an asset to your team. I'm
             passionate about creating innovative and easy-to-use websites and
             applications that help empower and make life easier for users. When
-            I'm not coding I'm usually training for some kind of bicycle related
+             not coding I'm usually training for some kind of bicycle related
             ultra-endurance race.
           </p>
 
