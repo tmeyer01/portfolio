@@ -14,3 +14,38 @@ $titlefont : 'Poppins', sans-serif;
 $otherfont:  'Karla', sans-serif;
 
 $pfont:  'Archivo', sans-serif;
+
+
+$phonewidth: 592px;
+
+$width: 768px;
+
+$desktopwidth: 1045px;
+
+$desktopwidth2: 885px;
+
+@mixin  mobile{
+  @media(max-width: #{$width}){
+    @content
+  }
+};
+
+// Phone 2 
+@mixin tablet{
+  @media(max-width: #{$phonewidth}){
+    @content
+  }
+};
+
+// Tablet
+@mixin desktop{
+  @media(max-width: #{$desktopwidth}){
+    @content
+  }
+};
+
+@mixin desktop2{
+  @media(max-width: #{$desktopwidth}){
+    @content
+  }
+}
