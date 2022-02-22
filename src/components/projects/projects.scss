@@ -11,7 +11,12 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+  }
 
+  @include desktop2{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
   }
 
   .arrow {
@@ -25,7 +30,7 @@
     }
 
     @include desktop{
-      bottom: 40%;
+      bottom: 48%;
       height: 30px;
     }
 
@@ -77,6 +82,10 @@
       height: 750px;
     }
 
+    @include desktop2{
+     height: 100%;
+    }
+
     .container {
       width: 100vw;
       display: flex;
@@ -84,6 +93,12 @@
       justify-content: center;
 
       @include mobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+      }
+
+      @include desktop2{
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -108,6 +123,14 @@
           width:99%;
         }
 
+        @include desktop2{
+          flex-direction: column;
+          align-items: center;
+          flex-direction: column-reverse;
+          height: 90%;
+          width:99%;
+        }
+
 
         .left {
           flex: 4;
@@ -120,6 +143,10 @@
             padding-top: 10px;
           }
 
+          @include desktop2{
+            padding-top: 10px;
+          }
+
           .leftContainer{
             width: 90%;
             height: 80%;
@@ -128,6 +155,10 @@
             justify-content: space-between;
 
             @include mobile{
+              justify-content: space-between;
+            }
+
+            @include desktop2{
               justify-content: space-between;
             }
 

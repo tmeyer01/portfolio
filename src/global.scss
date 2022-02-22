@@ -20,9 +20,10 @@ $width: 768px;
 
 $phonewidth: 592px;
 
-$desktopwidth: 1045px;
 
-$desktopwidth2: 885px;
+$desktopwidth2: 821px;
+
+$desktopwidth: 1045px;
 
 @mixin  mobile{
   @media(max-width: #{$width}){
