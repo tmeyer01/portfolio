@@ -5,6 +5,11 @@
   display: flex;
   flex-direction: row;
 
+  @include mobile{
+    flex-direction: column;
+    align-items: center;
+  }
+
   .left{
     flex: 1;
     position: relative;
@@ -12,23 +17,50 @@
     flex-direction: column;
     justify-content: center;
 
+    @include mobile{
+      flex: 1;
+      padding: 0px 4px;
+      justify-content: center;
+      align-items: center;
+    }
+
 
     .about--wrapper {
       display: flex;
       flex-direction: column;
       padding: 30px;
 
+      @include mobile{
+        padding:0;
+        width: 80%;
+        height:100%;
+        justify-content: center;
+      }
+
 
       h2 {
         font-family: $titlefont;
         letter-spacing: 1.2px;
         padding-bottom: 10px;
+
+        @include mobile{
+          padding-bottom: 0;
+          font-size: 20px;
+          padding: 0px 4px;
+        }
       }
       
       p {
         line-height: 1.6;
         word-wrap: break-word;
         font-family: $pfont;
+
+        @include mobile{
+          line-height: 1.7;
+          align-items: center;
+          font-size:13px;
+          padding: 4px;
+        }
       }
     }
     
@@ -37,6 +69,12 @@
       bottom: 10px;
       left: 20px;
       display:flex;
+
+      @include mobile{
+        bottom: 10px;
+        left: 2%;
+        display:none;
+      }
     }
 
     img{
@@ -53,6 +91,13 @@
     flex-direction: column;
     justify-content: center;
 
+    @include mobile{
+      flex: 1.5;
+      padding: 4px;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
     .about--languages--libraries{
       display: flex;
       flex-direction: column;
@@ -60,27 +105,92 @@
       height: 100%;
       justify-content: center;
 
+
+      @include mobile{
+        padding:0;
+        width: 80%;
+        justify-content: flex-start;
+        
+        h2{
+          font-size: 18px;
+        }
+
+        p{
+          line-height: 1.2;
+          align-items: center;
+          font-size:13px;
+          padding: 4px;
+        }
+      }
+
       .languages{
         padding-bottom: 30px;
+       
+        @include mobile{
+          padding-bottom: 0;
+        }
+
+        h2{
+          @include mobile{
+            padding: 10px 4px;
+          }
+         }
+
         p {
           line-height: 1.6;
           word-wrap: break-word;
           font-family: $pfont;
+
+          @include mobile{
+            line-height: 1.2;
+            align-items: center;
+            font-size:13px;
+            padding: 4px;
+          }
         }
       }
        
       .libraries{
         padding-bottom:30px;
+
+        @include mobile{
+          h2{
+            padding: 10px 4px;
+          }
+          padding-bottom:0px;
+        }
+
         p {
           line-height: 1.6;
           word-wrap: break-word;
+
+          @include mobile{
+            line-height: 1.2;
+            align-items: center;
+            font-size:13px;
+            padding: 4px;
+          }
         }
       }
 
       .other{
+        @include mobile{
+          h2{
+            padding: 10px 4px;
+          }
+          padding-bottom:0px;
+        }
+
         p {
           line-height: 1.6;
           word-wrap: break-word;
+
+          @include mobile{
+            line-height: 1.2;
+            align-items: center;
+            font-size:13px;
+            padding: 4px;
+          }
         }
       }
 
@@ -101,7 +211,25 @@
       position: absolute;
       bottom: 10px;
       left: 20px;
-      display:none
+      display:none;
+
+      @include mobile{
+        bottom: 10px;
+        left: 2%;
+        // z-index: 66;
+        display:flex;
+      }
+
+      img{
+        width: 35px;
+        animation: blinker 4s linear infinite;
+        margin: 0 auto 0 auto;
+      }
+  
+      @keyframes blinker {  
+        50% { opacity: 0; }
+      }
+
     }
   }
 
