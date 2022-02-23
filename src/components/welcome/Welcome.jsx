@@ -1,4 +1,5 @@
 import "./welcome.scss";
+import downarrow from '../../images/colorarrow.png'
 
 export default function Welcome() {
   return (
@@ -13,7 +14,7 @@ export default function Welcome() {
         </div>
 
         <a href="#about" className="downArrow">
-          <img src="./images/icons/colorarrow.png" alt="icondown" />
+          <img src={downarrow} alt="icondown" />
         </a>
       </div>
     </div>
