@@ -168,6 +168,7 @@
               align-items: center;
               justify-content: center;
               overflow-y: hidden;
+              padding-top:5px;
 
               @include mobile{
                 width: 80px;
@@ -185,6 +186,7 @@
 
                 @include mobile{
                   width: 80%;
+                  justify-content: flex-end;
                 }
               }
             }
@@ -197,7 +199,7 @@
 
                 @include mobile{
                   font-size: 20px;
-                  overflow: none;
+                  overflow: hidden;
                 }
             }
 
