@@ -2,10 +2,10 @@ import "./projects.scss";
 import { useState } from "react";
 import { projectsData } from "../../projectData";
 import downArrow from '../../images/colorarrow.png'
-import leftArrow from '../../image/left.png'
-import rightArrow from '../../image/right.png'
-import gitHubImage from '../../image/github.png'
-import websiteImage from '../../image/www.png'
+import leftArrow from '../../images/left.png'
+import rightArrow from '../../images/right.png'
+import gitHubImage from '../../images/github.png'
+import websiteImage from '../../images/www.png'
 
 export default function Projects() {
   const [currentProject, setCurrentProject] = useState(0);
