@@ -1,5 +1,5 @@
 import './aboutme.scss'
-import downarrow from '../../images/colorarrow.png'
+import downArrow from '../../images/colorarrow.png'
 
 export default function AboutMe() {
   return (
@@ -19,7 +19,7 @@ export default function AboutMe() {
 
         </div>
           <a href="#projects" className="downArrowLeft">
-          <img src={downarrow} alt="icondown" />
+          <img src={downArrow} alt="icondown" />
           </a>
       </div>
 
@@ -51,7 +51,7 @@ export default function AboutMe() {
         </div>
 
         <a href="#projects" className="downArrowRight">
-          <img src="./images/icons/colorarrow.png" alt="downICON" />
+          <img src={downArrow} alt="downICON" />
         </a>
       </div>
     </div>
