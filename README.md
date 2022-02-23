@@ -1,6 +1,6 @@
 # My frist web dev portfolio site
 
-Yes of coure the color theme is modeled after the Oakland Atheletics :) Cant wait to add more projects! 
+Yes of coure the color theme is modelled after the Oakland Atheletics :) Cant wait to add more projects! 
 
 Link to site is [here](https://tm01.herokuapp.com/)
 
