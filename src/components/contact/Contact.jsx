@@ -1,6 +1,12 @@
 import "./contact.scss";
 import { useState } from "react";
 import { send } from "emailjs-com";
+import linkedinImage from '../../images/linkedin.png'
+import gitHubImage from '../../images/github.png';
+import resumeImage from '../../images/resume.png';
+import twitterImage from '../../images/twitter.png';
+import instagramImage from '../../images/instagram.png';
+
 
 export default function Contact() {
   const [message, setMessage] = useState(false);
@@ -91,35 +97,35 @@ export default function Contact() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="./images/icons/linkedin.png" alt="linkeDin" />
+              <img src={linkedinImage} alt="linkeDin" />
             </a>
             <a
               href="https://github.com/tmeyer01"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="./images/icons/github.png" alt="github" />
+              <img src={gitHubImage} alt="github" />
             </a>
             <a
               href="https://www.canva.com/design/DAEwBE504Vk/xNEYzY-ZtLBoGtA3jAhUVw/view?utm_content=DAEwBE504Vk&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="./images/icons/resume.png" alt="resume" />
+              <img src={resumeImage} alt="resume" />
             </a>
             <a
               href="https://twitter.com/BWebdev"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="./images/icons/twitter.png" alt="twitter" />
+              <img src={twitterImage} alt="twitter" />
             </a>
             <a
               href="https://www.instagram.com/_tm.dev/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="./images/icons/instagram.png" alt="instagram" />
+              <img src={instagramImage} alt="instagram" />
             </a>
           </div>
         </div>

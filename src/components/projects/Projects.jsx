@@ -1,6 +1,11 @@
 import "./projects.scss";
 import { useState } from "react";
 import { projectsData } from "../../projectData";
+import downArrow from '../../images/colorarrow.png'
+import leftArrow from '../../image/left.png'
+import rightArrow from '../../image/right.png'
+import gitHubImage from '../../image/github.png'
+import websiteImage from '../../image/www.png'
 
 export default function Projects() {
   const [currentProject, setCurrentProject] = useState(0);
@@ -34,7 +39,7 @@ export default function Projects() {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <img src="./images/icons/github.png" alt="github" />
+                      <img src={gitHubImage} alt="github" />
                     </a>
 
                     {projectsData.liveSite && (
@@ -44,7 +49,7 @@ export default function Projects() {
                         rel="noopener noreferrer"
                       >
                         <img
-                          src="./images/icons/www.png"
+                          src={websiteImage}
                           alt={projectsData.title}
                         />
                       </a>
@@ -68,20 +73,20 @@ export default function Projects() {
       </div>
 
       <img
-        src="./images/icons/left.png"
+        src={leftArrow}
         className="arrow left"
         alt=""
         onClick={() => handleClick("left")}
       />
       <img
-        src="./images/icons/right.png"
+        src={rightArrow}
         className="arrow right"
         alt=""
         onClick={() => handleClick()}
       />
 
       <a href="#contact" className="down">
-        <img src="./images/icons/colorarrow.png" alt="icondown" />
+        <img src={downArrow} alt="icondown" />
       </a>
     </div>
   );
